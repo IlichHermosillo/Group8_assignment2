@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+<title>Ilich Hermosillo - Info</title>
+</head>
+<body>
+	<p>
+	<h2>Student Info</h2>
+	</p>
+
+	<form th:action="@{/student}" method="post">
+		<table>
+			<tr>
+				<td><strong th:text="'Name: '"></strong></td>
+				<td><span th:text="${st.name}"></span></td>
+			</tr>
+
+			<tr>
+				<td><strong th:text="'Last Name: '"></strong></td>
+				<td><span th:text="${st.lastname}"></span></td>
+			</tr>
+
+			<tr>
+				<td><strong th:text="'ID: '"></strong></td>
+				<td><span th:text="${st.id}"></span></td>
+			</tr>
+
+			<tr>
+				<td><strong th:text="'Program: '"></strong></td>
+				<td><span th:text="${st.program}"></span></td>
+			</tr>
+			<tr>
+				<td><strong th:text="'Class: '"></strong></td>
+				<td><span th:text="${st.class_}"></span></td>
+			</tr>
+			<tr>
+				<td><strong th:text="'Section: '"></strong></td>
+				<td><span th:text="${st.section}"></span></td>
+			</tr>
+		</table>
+	</form>
+
+	<hr>
+	<p>
+	<H2>Description</H2>
+	</p>
+	
+	<section>
+		International student from Mexico taking a 2-year Computer and Information Systems (POST-BACCALAUREATE DIPLOMA)
+		in Data Analyst
+	</section>
+	<p> <a href="/">Main Page</a>
+</body>
+</html>
