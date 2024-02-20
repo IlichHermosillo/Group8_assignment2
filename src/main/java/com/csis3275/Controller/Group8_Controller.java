@@ -21,4 +21,11 @@ public class Group8_Controller {
 		model.addAttribute("st", st);
 		return "/students/ihe-49-View";
 	}
+	
+	@GetMapping("/student/habib")
+	public String getHabibInformation(Model model) {
+		Group8_Model habib = new Group8_Model("Habib", "Javed", 300281273, 3275, 002, "CSIS - Dipolma");
+		model.addAttribute("habib", habib);
+		return "/students/hja_73_view";
+	}
 }

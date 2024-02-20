@@ -6,5 +6,55 @@
 </head>
 <body>
 
+<h1>Student Info</h1>
+	<div class="personalInfo">
+		<div class="tb">
+				<table>
+					<tr>
+						<td><strong th:text="'Name: '"></strong></td>
+						<td><span th:text="${habib.firstName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Last Name: '"></strong></td>
+						<td><span th:text="${habib.lastName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'ID: '"></strong></td>
+						<td><span th:text="${habib.id}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Program: '"></strong></td>
+						<td><span th:text="${habib.program}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Class: '"></strong></td>
+						<td><span th:text="${habib.classNumber}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Section: '"></strong></td>
+						<td><span th:text="${habib.section}"></span></td>
+					</tr>
+				</table>
+		</div>
+		<!-- <img th:src="@{/selfies/ihe-49-Selfie.jpg}" alt="ihe-49"> -->
+	</div>
+
+	<hr>
+	
+	<div class="description">
+	<h2>Description</h2>
+		<section>
+			<p>I'm currently pursuing the CSIS Diploma at Douglas College and have just one semester remaining. 
+				My goal is to transfer to Simon Fraser University to pursue a Bachelor of Science in Software Systems.
+				I'm excited about this transition and eager to continue my journey in the field of computer science.
+			</p>
+		</section>
+	</div>
+	
+	<div class="menuIndex">
+		<p>
+			<a href="/">Main Page</a>
+		</p>
+	</div>
 </body>
 </html>
