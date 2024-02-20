@@ -2,20 +2,37 @@ package com.csis3275.Model;
 
 public class Group8_Model {
 
+	String firstName;
+	String lastName;
 	int id;
 	int classNumber;
 	int section;
-	String firstName;
-	String lastName;
 	String program;
 
-	public Group8_Model(int id, int classNumber, int section, String firstName, String lastName, String program) {
+	public Group8_Model(String firstName, String lastName, int id, int classNumber, int section, String program) {
+
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.id = id;
 		this.classNumber = classNumber;
 		this.section = section;
-		this.firstName = firstName;
-		this.lastName = lastName;
 		this.program = program;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public int getId() {
@@ -40,22 +57,6 @@ public class Group8_Model {
 
 	public void setSection(int section) {
 		this.section = section;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
 	}
 
 	public String getProgram() {

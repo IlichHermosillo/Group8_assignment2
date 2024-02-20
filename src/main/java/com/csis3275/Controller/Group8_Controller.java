@@ -14,10 +14,10 @@ public class Group8_Controller {
 		return("index.html");
 	}
 	
-	@GetMapping("/group8-ilich")
+	@GetMapping("/students/ihe-49-View")
 	public String displayStudents(Model model) {
-		Group8_Model st = new Group8_Model(300358049, 3275, 002, "Ilich", "Hermosillo", "CSIS - Data Analyst");
+		Group8_Model st = new Group8_Model("Ilich", "Hermosillo", 300358049, 3275, 002, "CSIS - Data Analyst");
 		model.addAttribute("st", st);
-		return "ihe-49-View";
+		return "/students/ihe-49-View";
 	}
 }
