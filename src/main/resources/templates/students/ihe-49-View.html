@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="/Students.css">
 <head>
 <meta charset="UTF-8">
 <title>Ilich Hermosillo - Info</title>
 </head>
 <body>
-	<h2>Student Info</h2>
-	<form th:action="@{/students/group8-ilich}" method="post">
-		<table>
-			<tr>
-				<td><strong th:text="'Name: '"></strong></td>
-				<td><span th:text="${st.firstName}"></span></td>
-			</tr>
-			<tr>
-				<td><strong th:text="'Last Name: '"></strong></td>
-				<td><span th:text="${st.lastName}"></span></td>
-			</tr>
-			<tr>
-				<td><strong th:text="'ID: '"></strong></td>
-				<td><span th:text="${st.id}"></span></td>
-			</tr>
-			<tr>
-				<td><strong th:text="'Program: '"></strong></td>
-				<td><span th:text="${st.program}"></span></td>
-			</tr>
-			<tr>
-				<td><strong th:text="'Class: '"></strong></td>
-				<td><span th:text="${st.classNumber}"></span></td>
-			</tr>
-			<tr>
-				<td><strong th:text="'Section: '"></strong></td>
-				<td><span th:text="${st.section}"></span></td>
-			</tr>
-		</table>
+	<h1>Student Info</h1>
+
+	<div class="personalInfo">
+		<div class="tb">
+			<form th:action="@{/students/group8-ilich}" method="post">
+				<table>
+					<tr>
+						<td><strong th:text="'Name: '"></strong></td>
+						<td><span th:text="${st.firstName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Last Name: '"></strong></td>
+						<td><span th:text="${st.lastName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'ID: '"></strong></td>
+						<td><span th:text="${st.id}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Program: '"></strong></td>
+						<td><span th:text="${st.program}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Class: '"></strong></td>
+						<td><span th:text="${st.classNumber}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Section: '"></strong></td>
+						<td><span th:text="${st.section}"></span></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+
 		<img th:src="@{/selfies/ihe-49-Selfie.jpg}" alt="ihe-49">
-	</form>
+	</div>
+	
 	<hr>
+	
+	<div class="description">
 	<h2>Description</h2>
 	<section>
-		<p>International student from Mexico, currently taking a 2-year Computer
-		and Information Systems (POST-BACCALAUREATE DIPLOMA) in Data Analyst.
-		I have 2-year experience in IT as a Technical Support with additional
-		occupations of Network Technical, one year in a Private Sector company
-		and the second one in an Automotive sector.</p>
+		<p>International student from Mexico, currently taking a 2-year
+			Computer and Information Systems (POST-BACCALAUREATE DIPLOMA) in Data
+			Analyst. I have 2-year experience in IT as a Technical Support with
+			additional occupations of Network Technical, one year in a Private
+			Sector company and the second one in an Automotive sector.</p>
 	</section>
+	</div>
+	
+	<div class="menuIndex">
 	<p>
 		<a href="/">Main Page</a>
 	</p>
+	</div>
 </body>
 </html>
