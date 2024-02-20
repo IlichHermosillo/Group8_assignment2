@@ -2,15 +2,14 @@ package com.csis3275.Model;
 
 public class Group8_Model {
 
-	String firstName;
-	String lastName;
-	int id;
-	int classNumber;
-	int section;
-	String program;
+	private String firstName;
+	private String lastName;
+	private int id;
+	private int classNumber;
+	private int section;
+	private String program;
 
 	public Group8_Model(String firstName, String lastName, int id, int classNumber, int section, String program) {
-
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.id = id;

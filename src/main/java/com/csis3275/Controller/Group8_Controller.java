@@ -8,7 +8,8 @@ import com.csis3275.Model.Group8_Model;
 
 @Controller
 public class Group8_Controller {
-
+	
+	
 	@GetMapping("/")
 	public String displayIdex() {
 		return("index.html");
