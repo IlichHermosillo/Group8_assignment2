@@ -9,5 +9,4 @@ public class Group8Assignment2Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Group8Assignment2Application.class, args);
 	}
-
 }
