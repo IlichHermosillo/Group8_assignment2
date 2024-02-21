@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/Students.css">
+<head>
+<meta charset="UTF-8">
+<title>Thanh Hung, Do</title>
+</head>
+<body>
+
+<h1>Student Info</h1>
+	<div class="personalInfo">
+		<div class="tb">
+				<table>
+					<tr>
+						<td><strong th:text="'Name: '"></strong></td>
+						<td><span th:text="${ben.firstName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Last Name: '"></strong></td>
+						<td><span th:text="${ben.lastName}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'ID: '"></strong></td>
+						<td><span th:text="${ben.id}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Program: '"></strong></td>
+						<td><span th:text="${ben.program}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Class: '"></strong></td>
+						<td><span th:text="${ben.classNumber}"></span></td>
+					</tr>
+					<tr>
+						<td><strong th:text="'Section: '"></strong></td>
+						<td><span th:text="${ben.section}"></span></td>
+					</tr>
+				</table>
+		</div>
+ <img th:src="@{/selfies/hdo-37-selfie.jpg}" alt="habib"> 
+	</div>
+
+	<hr>
+	
+	<div class="description">
+	<h2>Description</h2>
+		<section>
+			<p>I'm an international student from Vietnam. Currently, I am taking CSIS - diploma program. At first, I am interested in 
+				graphic designing and building 3D models for videogames. Also, now I want to know more about programing, for more specific
+				is software engineering. I hope I would know and learn more from this course. Thank you, Mr. Rahim.
+			</p>
+		</section>
+	</div>
+	
+	<div class="menuIndex">
+		<p>
+			<a href="/">Main Page</a>
+		</p>
+	</div>
+</body>
+</html>
