@@ -28,4 +28,11 @@ public class Group8_Controller {
 		model.addAttribute("habib", habib);
 		return "/students/hja_73_view";
 	}
+	
+	@GetMapping("/student/ben")
+	public String getBenInformation(Model model) {
+		Group8_Model ben = new Group8_Model("Thanh Hung", "Do", 300284237, 3275, 002, "CSIS - Dipolma");
+		model.addAttribute("ben", ben);
+		return "/students/hdo-37-view";
+	}
 }
