@@ -17,7 +17,7 @@ public class Group8_Controller {
 	
 	@GetMapping("/students/ihe-49-View")
 	public String displayStudents(Model model) {
-		Group8_Model st = new Group8_Model("Ilich", "Hermosillo", 300358049, 3275, 002, "CSIS - Data Analyst");
+		Group8_Model st = new Group8_Model("Ilich", "Hermosillo", 300358049, 3275, 002, "CSIS - Data Analyst (PBD)");
 		model.addAttribute("st", st);
 		return "/students/ihe-49-View";
 	}

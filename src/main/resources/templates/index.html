@@ -9,16 +9,10 @@
 	<h1>Group 8 - Assignment 2</h1>
 	<h2>Meet the Students</h2>
 
-	<ol>
-		<a href="/students/ihe-49-View">Ilich Hermosillo</a>
-	</ol>
-	
-	<ol>
-		<a th:href="@{/student/habib}">Habib Javed</a>
-	</ol>
-	
-	<ol>
-		<a th:href="@{/student/ben}">Thanh Hung, Do</a>
-	</ol>
+	<div class="image-grid">
+		<a th:href="@{/student/habib}"><img th:src="@{/selfies/hja_73_selfie.jpg}" alt="habib">Habib Javed</a>
+		<a th:href="@{/students/ihe-49-View}"><img th:src="@{/selfies/ihe-49-Selfie.jpg}" alt="Ilich">Ilich Hermosillo</a>
+		<a th:href="@{/student/ben}"><img th:src="@{/selfies/hdo-37-selfie.jpg}" alt="Thanh Hung,Do">Thanh Hung, Do</a>
+	</div>
 </body>
 </html>
